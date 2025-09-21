@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mbilse的博客</title>
+    <title>Mbilse's blog - Home</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -531,15 +531,15 @@
         <main class="container">
             <!-- 首页视图 -->
             <div v-if="currentView === 'home'">
-                <h1 class="page-title">技术文章与随笔</h1>
+                <h1 class="page-title">文章与随笔</h1>
                 
-                <!-- 搜索框 -->
+                <!-- 搜索框 --> 
                 <div class="search-container">
                     <i class="fas fa-search search-icon"></i>
                     <input 
                         type="text" 
                         class="search-box" 
-                        placeholder="搜索文章标题或内容..." 
+                        placeholder="搜索文章序号，标题或内容..." 
                         v-model="searchQuery"
                         @input="searchArticles"
                     >
@@ -616,11 +616,11 @@
                 
                 <div class="article-detail">
                     <div class="article-content">
-                        <p>这是Mbilse制作的一个使用纯静态方式构建的Vue.js博客。所有数据都内联在HTML文件中，运行起来不费力气，支持的功能有很多很多，最新写的文章在博客文章列表的最后面呢。</p>
+                        <p>这是Mbilse制作的一个使用纯静态方式构建的Vue.js博客。所有数据都内联在HTML文件中，支持的功能有很多，最新写的文章在博客文章列表的最后面，你可以通过工具栏中的向下箭头"电梯直达" 直接到达最末端。</p>
                         
                         <h3>功能特点</h3>
-                        <p>• 深色/浅色模式切换</p>
-                        <p>• 文章搜索功能</p>
+                        <p>• 优秀的深色/浅色模式切换</p>
+                        <p>• 快速地文章搜索功能</p>
                         <p>• 响应式设计，适配移动设备</p>
                         <p>• 采用新文章靠后设计</p>
                         <p>• 支持看新文章时电梯直达</p>
@@ -629,12 +629,14 @@
                         <h3>技术栈</h3>
                         <p>• Vue.js - 前端框架</p>
                         <p>• Font Awesome - 图标库</p>
+                        <p>• HTML5&Github pages - 页面和显示</p>
                         <p>• CSS3 - 样式设计</p>
                         
-                        <p>本博客(by Mbilse)展示了如何在无需服务器的情况下创建功能完整的博客系统，我们将挂载在Github Pages上，官网：https://mbilse.github.io/。</p>
+                        <p>本博客(by Mbilse)展示了如何在无需服务器的情况下创建功能完整的博客系统，我们将挂载在Github Pages上，官网：https://mbilse.github.io/vueblog 和 https://mbilseblog.github.io/ 。</p>
                         
                         <h3>-HOT-</h3>
                         <p>火热榜</p>
+                        <p>这里还没有哦！</p>
 
                         <a href="#" class="back-button" @click.prevent="showHome">
                     <i class="fas fa-arrow-left"></i> 返回文章列表
