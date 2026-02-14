@@ -591,6 +591,7 @@
                         <span><i class="far fa-calendar"></i> {{ currentArticle.date }}</span>
                         <span><i class="far fa-clock"></i> 阅读时间：{{ currentArticle.readTime }}分</span>
                         <span><i class="fas fa-tags"></i> {{ currentArticle.tags.join(', ') }}</span>
+                        
                     </div>
                     <div class="article-content">
                         <p v-for="(para, index) in currentArticle.content" :key="index">{{ para }}</p>
@@ -598,21 +599,7 @@
                     <a href="#" class="back-button" @click.prevent="showHome">
                     <i class="fas fa-arrow-left"></i> 返回文章列表
                     </a>
-                    <script src="https://giscus.app/client.js"
-        data-repo="mbilseblog/mbilseblog.github.io"
-        data-repo-id="R_kgDOPz_Cow"
-        data-category="General"
-        data-category-id="DIC_kwDOPz_Co84CwYoI"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-                    </script>
+                    
                 </div>
                 <div v-else class="loader">
                     <div class="dot"></div>
@@ -631,6 +618,7 @@
                 
                 <div class="article-detail">
                     <div class="article-content">
+                        <p>位置：首页>关于</p>
                         <p>这是Mbilse制作的一个使用纯静态方式构建的Vue.js博客。所有数据都内联在HTML文件中，支持的功能有很多，最新写的文章在博客文章列表的最后面，你可以通过工具栏中的向下箭头"电梯直达" 直接到达最末端。</p>
                         
                         <h3>功能特点</h3>
@@ -653,21 +641,7 @@
                         <p>火热榜</p>
                         <p>这里还没有哦！</p>
 
-                        <script src="https://giscus.app/client.js"
-        data-repo="mbilseblog/mbilseblog.github.io"
-        data-repo-id="R_kgDOPz_Cow"
-        data-category="General"
-        data-category-id="DIC_kwDOPz_Co84CwYoI"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-                        </script>
+                        
 
                         <a href="#" class="back-button" @click.prevent="showHome">
                     <i class="fas fa-arrow-left"></i> 返回文章列表
